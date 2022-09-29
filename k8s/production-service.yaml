@@ -10,7 +10,7 @@ spec:
     port: 8161
   - name: endpoint
     port: 61616
-  type: LoadBalancer
+  type: NodePort
 ---
 kind: Service
 apiVersion: v1
@@ -46,4 +46,4 @@ spec:
   ports:
   - name: http
     port: 80
-  type: LoadBalancer
+  type: NodePort
